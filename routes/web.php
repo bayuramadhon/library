@@ -26,6 +26,7 @@ Route::get('/authors', [App\Http\Controllers\authorController::class, 'index']);
 Route::get('/members', [App\Http\Controllers\memberController::class, 'index']);
 Route::get('/transactions', [App\Http\Controllers\transactionController::class, 'index']);
 Route::get('/admins', [App\Http\Controllers\Admincontroller::class, 'dashboard']);
+Route::get('test_spatie', [\App\Http\Controllers\Admincontroller::class, 'test_spatie']);
 
 // Route::get('/catalogs', [App\Http\Controllers\CatalogController::class, 'index']);
 // Route::get('/catalogs/create', [App\Http\Controllers\CatalogController::class, 'create']);
